@@ -1,0 +1,20 @@
+<app-nav></app-nav>
+<h1 lass="sky-page-heading">Demo Application</h1>
+
+<button
+  class="sky-btn sky-btn-primary sky-margin-stacked-separate"
+  type="button"
+  (click)="onOpenModalClick()"
+>
+Add
+</button>
+
+<ag-grid-angular
+    style="width: 1300px; height: 550px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+
+
